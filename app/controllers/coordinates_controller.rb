@@ -13,6 +13,7 @@ class CoordinatesController < ApplicationController
     museums_serialised = URI.open(url).read
     museums = JSON.parse(museums_serialised)
 
+    museums["features"]
     raise
 
   end
